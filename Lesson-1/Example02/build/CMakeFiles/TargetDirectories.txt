@@ -1,0 +1,3 @@
+C:/Hillel/Lesson-1/Example02/build/CMakeFiles/math_app.dir
+C:/Hillel/Lesson-1/Example02/build/CMakeFiles/ALL_BUILD.dir
+C:/Hillel/Lesson-1/Example02/build/CMakeFiles/ZERO_CHECK.dir

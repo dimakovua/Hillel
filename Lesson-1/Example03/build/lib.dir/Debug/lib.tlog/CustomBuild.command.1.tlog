@@ -1,0 +1,10 @@
+^C:\HILLEL\LESSON-1\EXAMPLE03\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Hillel/Lesson-1/Example03 -BC:/Hillel/Lesson-1/Example03/build --check-stamp-file C:/Hillel/Lesson-1/Example03/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

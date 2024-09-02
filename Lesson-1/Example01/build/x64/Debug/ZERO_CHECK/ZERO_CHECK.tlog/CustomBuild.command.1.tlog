@@ -1,0 +1,10 @@
+^C:\HILLEL\LESSON-1\EXAMPLE01\BUILD\CMAKEFILES\F2BCF38EB65627F5A5305B2B2520176D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Hillel/Lesson-1/Example01 -BC:/Hillel/Lesson-1/Example01/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Hillel/Lesson-1/Example01/build/Hello.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
