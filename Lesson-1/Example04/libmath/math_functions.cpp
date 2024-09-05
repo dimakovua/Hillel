@@ -5,6 +5,7 @@ int Math::add(int a, int b)
     return a + b;
 }
 
+
 int Math::divide(int a, int b)
 {
     if(b != 0)
