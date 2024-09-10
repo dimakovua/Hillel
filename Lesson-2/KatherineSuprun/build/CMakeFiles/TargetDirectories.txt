@@ -1,0 +1,4 @@
+/home/kate/Hillel_PR/Lesson-2/KatherineSuprun/build/CMakeFiles/project.dir
+/home/kate/Hillel_PR/Lesson-2/KatherineSuprun/build/CMakeFiles/main_app.dir
+/home/kate/Hillel_PR/Lesson-2/KatherineSuprun/build/CMakeFiles/edit_cache.dir
+/home/kate/Hillel_PR/Lesson-2/KatherineSuprun/build/CMakeFiles/rebuild_cache.dir
