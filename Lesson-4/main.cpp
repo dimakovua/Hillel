@@ -1,4 +1,3 @@
-// main.cpp
 #include <boost/asio.hpp>
 #include <boost/property_tree/ptree.hpp>
 #include <boost/property_tree/json_parser.hpp>
@@ -8,89 +7,152 @@
 
 using boost::asio::ip::tcp;
 
-// Функція для відправки запиту до OpenWeather API і отримання відповіді
-std::string fetchWeather(const std::string& api_key, const std::string& city) {
-    try {
+std::string fetchWeather(const std::string& api_key, const std::string& city)
+{
+    try
+    {
+        // Set up
         boost::asio::io_context io_context;
         tcp::resolver resolver(io_context);
         tcp::socket socket(io_context);
 
-        // Резолвимо адресу і підключаємося до сервера
-        boost::asio::connect(socket, resolver.resolve("api.openweathermap.org", "80"));
+        // Resolve and connection
+        auto endpoint = resolver.resolve("api.openweathermap.org", "80");
+        boost::asio::connect(socket, endpoint);
 
-        // Формуємо і відправляємо запит однією командою
+        // Request
         boost::asio::write(socket, boost::asio::buffer(
             "GET /data/2.5/weather?q=" + city + "&appid=" + api_key + "&units=metric HTTP/1.1\r\n"
             "Host: api.openweathermap.org\r\n"
             "Connection: close\r\n\r\n"
         ));
 
-        // Отримання відповіді
+        // Response
+
         std::string response;
+
         boost::system::error_code error;
-        do {
+        do
+        {
             char buf[1024];
             size_t len = socket.read_some(boost::asio::buffer(buf), error);
-            if (!error || error == boost::asio::error::eof) {
+
+            if(!error || error == boost::asio::error::eof)
+            {
                 response.append(buf, len);
-            }
+            } 
         } while (!error);
 
         return response;
-    } catch (const std::exception& e) {
-        std::cerr << "Error: " << e.what() << std::endl;
+    }
+    catch(std::exception& ex)
+    {
+        std::cout << "Error: " << ex.what() << "\n";
         return "";
     }
 }
 
-// Функція для парсингу JSON і виводу необхідної інформації
-void parseWeatherJson(const std::string& json) {
-    try {
-        // Знаходимо початок JSON в відповіді
+void parseAndPrint(const std::string& json)
+{
+    try
+    {
         auto json_start = json.find('{');
-        if (json_start == std::string::npos) {
-            std::cerr << "Invalid JSON response" << std::endl;
+        if(json_start == std::string::npos)
+        {
+            std::cout << "Invalid JSON response. Stopping.\n";
             return;
         }
 
-        std::stringstream ss(json.substr(json_start));  // Створюємо stream з JSON частини відповіді
+        std::stringstream ss(json.substr(json_start));
         boost::property_tree::ptree pt;
-        boost::property_tree::read_json(ss, pt);  // Читаємо JSON в дерево властивостей
 
-        // Дістаємо назву міста
+        boost::property_tree::read_json(ss, pt);
+
+        // Getting city name
         std::string city = pt.get<std::string>("name");
 
-        // Отримуємо масив weather
+        // Weather Array
         const boost::property_tree::ptree& weather_array = pt.get_child("weather");
 
-        // Перевіряємо, що масив не пустий
-        if (!weather_array.empty()) {
-            // Отримуємо перший елемент масиву
-            const boost::property_tree::ptree& first_weather = weather_array.begin()->second;
-            std::string weather_main = first_weather.get<std::string>("main");
+        if(!weather_array.empty())
+        {
+            // Get first element
+            const boost::property_tree::ptree& first_element = weather_array.begin()->second;
 
-            // Дістаємо температуру
-            double temperature = pt.get<double>("main.temp");
+            std::string main_weather = first_element.get<std::string>("main");
+            
+            // Get temp
 
-            // Виводимо необхідну інформацію
-            std::cout << "City: " << city << std::endl;
-            std::cout << "Weather: " << weather_main << std::endl;
-            std::cout << "Temperature: " << temperature << "°C" << std::endl;
-        } else {
-            std::cerr << "Weather array is empty." << std::endl;
+            double temp = pt.get<double>("main.temp");
+
+            std::cout << "City: " << city << "\nMain Weather: " << main_weather << "\nTemp: " << temp << "\n";
         }
-
-    } catch (const std::exception& e) {
-        std::cerr << "Error parsing JSON: " << e.what() << std::endl;
+        else
+        {
+            std::cout << "Error! Empty Array!\n";
+        }
+    }
+    catch(std::exception& ex)
+    {   
+        std::cout << "Error! " << ex.what() << std::endl;
     }
 }
 
+int main()
+{
+    std::string api_key = "8915429fcf6a68275f7c20caab444827";
+    std::string city = "Barcelona";
 
-int main() {
-    std::string api_key = "8915429fcf6a68275f7c20caab444827"; // Замініть "YOUR_API_KEY" на дійсний ключ
-    std::string city = "Kyiv";            // Заміни на своє місто
+    parseAndPrint(fetchWeather(api_key, city));
 
-    std::string response = fetchWeather(api_key, city);
-    parseWeatherJson(response);
     return 0;
 }
+
+
+
+/*
+{
+  "coord": {
+    "lon": 30.7326,
+    "lat": 46.4775
+  },
+  "weather": [
+    {
+      "id": 804,
+      "main": "Clouds",
+      "description": "overcast clouds",
+      "icon": "04n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 21.02,
+    "feels_like": 20.72,
+    "temp_min": 21.02,
+    "temp_max": 21.02,
+    "pressure": 1011,
+    "humidity": 59,
+    "sea_level": 1011,
+    "grnd_level": 1009
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 3.65,
+    "deg": 107,
+    "gust": 6.38
+  },
+  "clouds": {
+    "all": 100
+  },
+  "dt": 1726505634,
+  "sys": {
+    "country": "UA",
+    "sunrise": 1726457793,
+    "sunset": 1726502842
+  },
+  "timezone": 10800,
+  "id": 698740,
+  "name": "Odesa",
+  "cod": 200
+}
+*/
