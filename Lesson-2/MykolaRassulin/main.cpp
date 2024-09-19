@@ -25,7 +25,7 @@ int main()
                 std::cout << "Enter the second value ";
                 std::cin >> val_2;
 
-                Math::divide(val_1, val_2);
+                std::cout << Math<int>::divide(val_1, val_2);
                 break;
             case 2:
                 std::cout << "Enter the first value: ";
@@ -34,7 +34,7 @@ int main()
                 std::cout << "Enter the second value ";
                 std::cin >> val_2;
 
-                Math::multiply(val_1, val_2);
+                std::cout << Math<int>::multiply(val_1, val_2);
                 break;
             case 3:
                 std::cout << "Enter the number: ";
@@ -43,7 +43,7 @@ int main()
                 std::cout << "Enter the degree value ";
                 std::cin >> val_2;
 
-                Math::square(val_1, val_2);
+                std::cout << Math<int>::square(val_1, val_2);
                 break;
             case 4:
                 x = -1;
