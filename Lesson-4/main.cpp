@@ -100,7 +100,7 @@ void parseAndPrint(const std::string& json)
 
 int main()
 {
-    std::string api_key = "8915429fcf6a68275f7c20caab444827";
+    std::string api_key = "8915429fc;;;;;%№";
     std::string city = "Barcelona";
 
     parseAndPrint(fetchWeather(api_key, city));
