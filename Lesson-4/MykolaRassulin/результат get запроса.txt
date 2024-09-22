@@ -1,0 +1,48 @@
+https://api.openweathermap.org/data/2.5/weather?q=Kyiv&appid=7ad3badbea5f46987365bc0d0716c57c&units=metric
+
+{
+  "coord": {
+    "lon": 30.5167,
+    "lat": 50.4333
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 19.82,
+    "feels_like": 19.5,
+    "temp_min": 17.54,
+    "temp_max": 19.84,
+    "pressure": 1025,
+    "humidity": 63,
+    "sea_level": 1025,
+    "grnd_level": 1009
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 0.45,
+    "deg": 71,
+    "gust": 0.89
+  },
+  "clouds": {
+    "all": 7
+  },
+  "dt": 1726902157,
+  "sys": {
+    "type": 2,
+    "id": 2003742,
+    "country": "UA",
+    "sunrise": 1726890180,
+    "sunset": 1726934337
+  },
+  "timezone": 10800,
+  "id": 703448,
+  "name": "Kyiv",
+  "cod": 200
+}
