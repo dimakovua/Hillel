@@ -7,6 +7,31 @@
 
 using boost::asio::ip::tcp;
 
+
+class BoostWrapperImpl
+{
+  public:
+  BoostWrapperImpl(boost::asio::io_context io_context)
+  {
+    resolver = tcp::resolver(io_context);
+
+  }
+
+  bool Connect()
+  {
+    auto endpoint = resolver.resolve("api.openweathermap.org", "80");
+    boost::asio::connect(socket, endpoint);
+
+  }
+
+  private:
+
+  tcp::resolver resolver;
+  tcp::socket socket;
+}
+
+
+
 std::string fetchWeather(const std::string& api_key, const std::string& city)
 {
     try
@@ -28,7 +53,6 @@ std::string fetchWeather(const std::string& api_key, const std::string& city)
         ));
 
         // Response
-
         std::string response;
 
         boost::system::error_code error;
