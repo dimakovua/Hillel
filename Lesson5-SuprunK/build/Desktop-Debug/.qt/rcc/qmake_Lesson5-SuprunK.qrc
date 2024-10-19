@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/Lesson5-SuprunK">
+    <file alias="qmldir">/home/kate/Lesson5-SuprunK/build/Desktop-Debug/Lesson5-SuprunK/qmldir</file>
+  </qresource>
+</RCC>
+

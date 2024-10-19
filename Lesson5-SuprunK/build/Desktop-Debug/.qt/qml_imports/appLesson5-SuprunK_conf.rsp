@@ -1,0 +1,14 @@
+-rootPath
+/home/kate/Lesson5-SuprunK
+-cmake-output
+-output-file
+/home/kate/Lesson5-SuprunK/build/Desktop-Debug/.qt/qml_imports/appLesson5-SuprunK_conf.cmake
+-importPath
+/home/kate/Lesson5-SuprunK/build/Desktop-Debug/Lesson5-SuprunK
+-importPath
+/home/kate/Lesson5-SuprunK/build/Desktop-Debug
+-importPath
+/home/kate/Qt/6.7.3/gcc_64/qml
+-qrcFiles
+/home/kate/Lesson5-SuprunK/build/Desktop-Debug/.qt/rcc/qmake_Lesson5-SuprunK.qrc
+/home/kate/Lesson5-SuprunK/build/Desktop-Debug/.qt/rcc/appLesson5-SuprunK_raw_qml_0.qrc

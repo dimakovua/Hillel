@@ -1,0 +1,169 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-442f6c3acc163b0688b2.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Lesson5-SuprunK",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-439f3b448ad020b959c2.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-2c5b93e82a1be91cc58f.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-61de8046d4a2247a4d38.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-43e02e4af90ee933caf1.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appLesson5-SuprunK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appLesson5-SuprunK-Debug-b2d00ef19e047014b59e.json",
+					"name" : "appLesson5-SuprunK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appLesson5-SuprunK_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appLesson5-SuprunK_autogen-Debug-f9074f4b4f375a2e6fa6.json",
+					"name" : "appLesson5-SuprunK_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appLesson5-SuprunK_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appLesson5-SuprunK_autogen_timestamp_deps-Debug-8860f3f6e7fac8835332.json",
+					"name" : "appLesson5-SuprunK_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appLesson5-SuprunK_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appLesson5-SuprunK_qmlimportscan-Debug-c9e595c5a19658328249.json",
+					"name" : "appLesson5-SuprunK_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appLesson5-SuprunK_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appLesson5-SuprunK_qmllint-Debug-c57d0758db4109928ad6.json",
+					"name" : "appLesson5-SuprunK_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appLesson5-SuprunK_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appLesson5-SuprunK_qmllint_json-Debug-0db8b9fa2d4e7ddb1959.json",
+					"name" : "appLesson5-SuprunK_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appLesson5-SuprunK_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appLesson5-SuprunK_qmllint_module-Debug-bdf60d0b0b976088ea44.json",
+					"name" : "appLesson5-SuprunK_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appLesson5-SuprunK_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appLesson5-SuprunK_qmltyperegistration-Debug-da93e141e6713496a6e7.json",
+					"name" : "appLesson5-SuprunK_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appLesson5-SuprunK_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appLesson5-SuprunK_tooling-Debug-66dff6a829e1406bf169.json",
+					"name" : "appLesson5-SuprunK_tooling",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/kate/Lesson5-SuprunK/build/Desktop-Debug",
+		"source" : "/home/kate/Lesson5-SuprunK"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

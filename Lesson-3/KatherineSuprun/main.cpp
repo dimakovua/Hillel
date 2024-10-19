@@ -109,7 +109,7 @@ int main()
     std::string api_key = readApiKey("config.json"); 
     std::string city = "Kyiv";
 
-    parseAndPrint(fetchWeather(api_key, city));
-
+         parseAndPrint(fetchWeather(api_key, city));
+ 
     return 0;
 }

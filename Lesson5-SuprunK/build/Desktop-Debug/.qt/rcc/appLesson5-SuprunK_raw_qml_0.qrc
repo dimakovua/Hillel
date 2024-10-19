@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/Lesson5-SuprunK/">
+    <file alias="Main.qml">/home/kate/Lesson5-SuprunK/Main.qml</file>
+  </qresource>
+</RCC>
+

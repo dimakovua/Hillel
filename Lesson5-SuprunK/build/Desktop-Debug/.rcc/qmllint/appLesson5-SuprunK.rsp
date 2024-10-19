@@ -1,0 +1,10 @@
+--bare
+-I
+/home/kate/Lesson5-SuprunK/build/Desktop-Debug
+-I
+/home/kate/Qt/6.7.3/gcc_64/qml
+--resource
+/home/kate/Lesson5-SuprunK/build/Desktop-Debug/.qt/rcc/qmake_Lesson5-SuprunK.qrc
+--resource
+/home/kate/Lesson5-SuprunK/build/Desktop-Debug/.qt/rcc/appLesson5-SuprunK_raw_qml_0.qrc
+/home/kate/Lesson5-SuprunK/Main.qml
