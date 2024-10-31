@@ -22,7 +22,7 @@ int main()
 #include <iostream>
 #include <string>
 #include <new>
-#include <vector.h>
+#include "vector.h"
 
 struct Student
 {
@@ -38,6 +38,7 @@ struct Student
 
 int main()
 {
+    auto it = new int(5);
     { // On stack
         Student s{"Oleksandr", 5.0};
         s.Print();
