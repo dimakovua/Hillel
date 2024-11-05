@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  ".qt/rcc/qrc_appLesson5-SuprunK_raw_qml_0.cpp"
+  ".qt/rcc/qrc_qmake_Lesson5-SuprunK.cpp"
+  ".rcc/qmlcache/appLesson5-SuprunK_Main_qml.cpp"
+  ".rcc/qmlcache/appLesson5-SuprunK_qmlcache_loader.cpp"
+  "CMakeFiles/appLesson5-SuprunK_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/appLesson5-SuprunK_autogen.dir/ParseCache.txt"
+  "appLesson5-SuprunK_autogen"
+  "CMakeFiles/appLesson5-SuprunK.dir/appLesson5-SuprunK_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/appLesson5-SuprunK.dir/appLesson5-SuprunK_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/appLesson5-SuprunK.dir/applesson5-suprunk_qmltyperegistrations.cpp.o"
+  "CMakeFiles/appLesson5-SuprunK.dir/applesson5-suprunk_qmltyperegistrations.cpp.o.d"
+  "CMakeFiles/appLesson5-SuprunK.dir/build/Desktop-Debug/.qt/rcc/qrc_appLesson5-SuprunK_raw_qml_0.cpp.o"
+  "CMakeFiles/appLesson5-SuprunK.dir/build/Desktop-Debug/.qt/rcc/qrc_appLesson5-SuprunK_raw_qml_0.cpp.o.d"
+  "CMakeFiles/appLesson5-SuprunK.dir/build/Desktop-Debug/.qt/rcc/qrc_qmake_Lesson5-SuprunK.cpp.o"
+  "CMakeFiles/appLesson5-SuprunK.dir/build/Desktop-Debug/.qt/rcc/qrc_qmake_Lesson5-SuprunK.cpp.o.d"
+  "CMakeFiles/appLesson5-SuprunK.dir/build/Desktop-Debug/.rcc/qmlcache/appLesson5-SuprunK_Main_qml.cpp.o"
+  "CMakeFiles/appLesson5-SuprunK.dir/build/Desktop-Debug/.rcc/qmlcache/appLesson5-SuprunK_Main_qml.cpp.o.d"
+  "CMakeFiles/appLesson5-SuprunK.dir/build/Desktop-Debug/.rcc/qmlcache/appLesson5-SuprunK_qmlcache_loader.cpp.o"
+  "CMakeFiles/appLesson5-SuprunK.dir/build/Desktop-Debug/.rcc/qmlcache/appLesson5-SuprunK_qmlcache_loader.cpp.o.d"
+  "CMakeFiles/appLesson5-SuprunK.dir/counter.cpp.o"
+  "CMakeFiles/appLesson5-SuprunK.dir/counter.cpp.o.d"
+  "CMakeFiles/appLesson5-SuprunK.dir/main.cpp.o"
+  "CMakeFiles/appLesson5-SuprunK.dir/main.cpp.o.d"
+  "Lesson5-SuprunK/appLesson5-SuprunK.qmltypes"
+  "appLesson5-SuprunK"
+  "appLesson5-SuprunK.pdb"
+  "appLesson5-SuprunK_autogen/mocs_compilation.cpp"
+  "appLesson5-SuprunK_autogen/timestamp"
+  "applesson5-suprunk_qmltyperegistrations.cpp"
+  "meta_types/appLesson5-SuprunK_json_file_list.txt"
+  "meta_types/appLesson5-SuprunK_json_file_list.txt.timestamp"
+  "meta_types/qt6applesson5-suprunk_debug_metatypes.json"
+  "meta_types/qt6applesson5-suprunk_debug_metatypes.json.gen"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/appLesson5-SuprunK.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

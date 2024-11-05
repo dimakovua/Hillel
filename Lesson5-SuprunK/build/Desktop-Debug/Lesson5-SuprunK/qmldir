@@ -1,0 +1,5 @@
+module Lesson5-SuprunK
+typeinfo appLesson5-SuprunK.qmltypes
+prefer :/qt/qml/Lesson5-SuprunK/
+Main 1.0 Main.qml
+

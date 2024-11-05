@@ -1,0 +1,9 @@
+/home/kate/Lesson6-SuprunK/build/Desktop-Debug/CMakeFiles/Lesson6-SuprunK.dir
+/home/kate/Lesson6-SuprunK/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/kate/Lesson6-SuprunK/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/kate/Lesson6-SuprunK/build/Desktop-Debug/CMakeFiles/list_install_components.dir
+/home/kate/Lesson6-SuprunK/build/Desktop-Debug/CMakeFiles/install.dir
+/home/kate/Lesson6-SuprunK/build/Desktop-Debug/CMakeFiles/install/local.dir
+/home/kate/Lesson6-SuprunK/build/Desktop-Debug/CMakeFiles/install/strip.dir
+/home/kate/Lesson6-SuprunK/build/Desktop-Debug/CMakeFiles/Lesson6-SuprunK_autogen_timestamp_deps.dir
+/home/kate/Lesson6-SuprunK/build/Desktop-Debug/CMakeFiles/Lesson6-SuprunK_autogen.dir
