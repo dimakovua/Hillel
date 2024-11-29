@@ -13,3 +13,8 @@ int Math::divide(int a, int b)
     
     return -1;
 }
+
+int Math::multiply(int a, int b)
+{
+    return a * b;
+}
